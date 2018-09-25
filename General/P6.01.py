@@ -7,5 +7,3 @@ while a <= 100 :
     a += 1
 cs = cs ** 2
 print (cs-sc)
-import time
-print(time.perf_counter())
