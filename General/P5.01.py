@@ -1,4 +1,3 @@
-import time
 tst = 0
 a = 1
 while True:
