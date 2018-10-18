@@ -11,5 +11,3 @@ while True:
     tst = 0
     a += 1
 print(a)
-import time
-print(time.perf_counter())

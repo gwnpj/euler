@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d741a0ec-b305-4d58-9861-3b25d3a0e2f8" name="Default" comment="change 'P5.01' (meilleur perf - 2min)">
-      <change afterPath="$PROJECT_DIR$/General/P5.02.py" afterDir="false" />
+    <list default="true" id="d741a0ec-b305-4d58-9861-3b25d3a0e2f8" name="Default" comment="add 'P5.02' (meilleur perf 0.015 sec)">
+      <change afterPath="$PROJECT_DIR$/General/P8.01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/P4.02.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P4.02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/P5.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P5.01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/P5.02.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P5.02.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,20 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="P4.02.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/General/P4.02.py">
+      <file leaf-file-name="P8.01.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/General/P8.01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P5.02.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/General/P5.02.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="75">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -62,10 +56,11 @@
         <option value="$PROJECT_DIR$/Outils/test1.py" />
         <option value="$PROJECT_DIR$/Outils/test2.py" />
         <option value="$PROJECT_DIR$/General/P6.01.py" />
-        <option value="$PROJECT_DIR$/General/P4.02.py" />
-        <option value="$PROJECT_DIR$/General/P5.01.py" />
         <option value="$PROJECT_DIR$/Outils/time perf (min sec).py" />
         <option value="$PROJECT_DIR$/General/P5.02.py" />
+        <option value="$PROJECT_DIR$/General/P5.01.py" />
+        <option value="$PROJECT_DIR$/General/P4.02.py" />
+        <option value="$PROJECT_DIR$/General/P8.01.py" />
       </list>
     </option>
   </component>
@@ -140,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.P5.02">
+  <component name="RunManager" selected="Python.P8.01">
     <configuration name="P4.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="euler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,7 +208,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="P6.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="P8.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="euler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -225,7 +220,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P6.01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P8.01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -234,17 +229,17 @@
     <list>
       <item itemvalue="Python.P4.01" />
       <item itemvalue="Python.P5.01" />
-      <item itemvalue="Python.P6.01" />
       <item itemvalue="Python.P4.02" />
       <item itemvalue="Python.P5.02" />
+      <item itemvalue="Python.P8.01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.P5.02" />
+        <item itemvalue="Python.P8.01" />
         <item itemvalue="Python.P4.02" />
-        <item itemvalue="Python.P5.01" />
         <item itemvalue="Python.P4.01" />
-        <item itemvalue="Python.P6.01" />
+        <item itemvalue="Python.P5.02" />
+        <item itemvalue="Python.P5.01" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538771104146</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add 'P5.02' (meilleur perf 0.015 sec)">
+      <created>1538825603316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538825603316</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -313,13 +315,13 @@
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3278302" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3278302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -339,9 +341,73 @@
     <MESSAGE value="new in /General 'P6.01'" />
     <MESSAGE value="change 'P6.01'" />
     <MESSAGE value="change 'P5.01' (meilleur perf - 2min)" />
-    <option name="LAST_COMMIT_MESSAGE" value="change 'P5.01' (meilleur perf - 2min)" />
+    <MESSAGE value="add 'P5.02' (meilleur perf 0.015 sec)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 'P5.02' (meilleur perf 0.015 sec)" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P4.02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P5.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P5.02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P4.02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P5.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P5.02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/General/P6.01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -410,46 +476,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Outils/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/General/P2.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Outils/test2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/General/P3.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/General/P1.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Outils/time perf (min sec).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/General/P4.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Outils/test1.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -461,24 +492,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/General/P5.02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/General/P5.01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="26" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/General/P4.02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/General/P5.02.py">
+    <entry file="file://$PROJECT_DIR$/General/P3.01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P2.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P1.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Outils/time perf (min sec).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P4.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
