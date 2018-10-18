@@ -1,5 +1,4 @@
 import math
-
 z = 600851475143
 i = 1
 while i < math.sqrt(z):                             # essayer de i=0 à i=sqrt(z)
