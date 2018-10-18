@@ -4,3 +4,7 @@ for i in range (995):
     if (a[i]*a[i+1]*a[i+2]*a[i+3]*a[i+5])>e:
         e = (a[i]*a[i+1]*a[i+2]*a[i+3]*a[i+5])
 print(e)
+
+
+
+#  TEST ENVOI VERSION DEPUIS PYCHARM 1000
