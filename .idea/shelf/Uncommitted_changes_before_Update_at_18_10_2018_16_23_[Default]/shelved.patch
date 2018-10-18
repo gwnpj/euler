@@ -1,0 +1,822 @@
+Index: General/P4.02.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P4.02.py	(date 1539857610000)
++++ General/P4.02.py	(date 1539857610000)
+@@ -0,0 +1,12 @@
++a = 999
++b = 999
++e = 0
++while b > 1:
++    while a > 1:
++        d = list(map(int, str(a * b))) #'int' = créer une liste nommée 'd', 'map' = version simpli d'1 boucle for pour prendre tous les chiffres du nombre, et les transf en 'int'
++        if d == d[::-1] and (a*b) > e: #si c'est un palindrome et qu'il est supérieur aux autres palindromes trouvés
++            e = a * b
++        a -=1
++    a = 999
++    b -= 1
++print(e)
+\ No newline at end of file
+Index: General/P5.02.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P5.02.py	(date 1539857610000)
++++ General/P5.02.py	(date 1539857610000)
+@@ -0,0 +1,8 @@
++lcm = 11
++for i in range(11, 20):
++    b = i + 1
++    pd = lcm * b
++    while b:
++        lcm, b = b, lcm % b
++    lcm = int(pd / lcm)
++print(lcm)
+\ No newline at end of file
+Index: Outils/test1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Outils/test1.py	(date 1539857610000)
++++ Outils/test1.py	(date 1539857610000)
+@@ -0,0 +1,0 @@
+Index: Outils/test2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Outils/test2.py	(date 1539857610000)
++++ Outils/test2.py	(date 1539857610000)
+@@ -0,0 +1,0 @@
+Index: General/P3.01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import math\n\nz = 600851475143\ni = 1\nwhile i < math.sqrt(z):                             # essayer de i=0 à i=sqrt(z)\n    if z % i == 0 and (3 ** i - 3) % i == 0:        # si i divise z et (3^i - 3) divisible par i (petit théorème de fermat)\n        e = i                                       # prendre i et le stocker dans e\n    i += 1\nprint(e)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P3.01.py	(date 1538771881000)
++++ General/P3.01.py	(date 1539857610000)
+@@ -1,5 +1,4 @@
+ import math
+-
+ z = 600851475143
+ i = 1
+ while i < math.sqrt(z):                             # essayer de i=0 à i=sqrt(z)
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d741a0ec-b305-4d58-9861-3b25d3a0e2f8\" name=\"Default\" comment=\"x\">\n      <change afterPath=\"$PROJECT_DIR$/Secondaire/P4 avec ::-1.py\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Secondaire/exp.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/General/P6.01.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/General/P6.01.py\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/General/P8.01.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/General/P8.01.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FUSProjectUsageTrigger\">\n    <session id=\"-750274534\">\n      <usages-collector id=\"statistics.lifecycle.project\">\n        <counts>\n          <entry key=\"project.closed\" value=\"15\" />\n          <entry key=\"project.open.time.0\" value=\"2\" />\n          <entry key=\"project.open.time.10\" value=\"1\" />\n          <entry key=\"project.open.time.13\" value=\"1\" />\n          <entry key=\"project.open.time.3\" value=\"1\" />\n          <entry key=\"project.open.time.4\" value=\"1\" />\n          <entry key=\"project.open.time.5\" value=\"3\" />\n          <entry key=\"project.open.time.6\" value=\"2\" />\n          <entry key=\"project.open.time.7\" value=\"3\" />\n          <entry key=\"project.open.time.8\" value=\"1\" />\n          <entry key=\"project.opened\" value=\"15\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.extensions.open\">\n        <counts>\n          <entry key=\"py\" value=\"42\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.types.open\">\n        <counts>\n          <entry key=\"Python\" value=\"42\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.extensions.edit\">\n        <counts>\n          <entry key=\"py\" value=\"1146\" />\n          <entry key=\"txt\" value=\"115\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.file.types.edit\">\n        <counts>\n          <entry key=\"PLAIN_TEXT\" value=\"115\" />\n          <entry key=\"Python\" value=\"1146\" />\n        </counts>\n      </usages-collector>\n      <usages-collector id=\"statistics.vcs.git.usages\" />\n    </session>\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n      <file pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/Secondaire/exp.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"285\">\n              <caret line=\"19\" lean-forward=\"true\" selection-start-line=\"19\" selection-end-line=\"19\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/Secondaire/P1.02.py\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"72\">\n              <caret line=\"4\" column=\"46\" lean-forward=\"true\" selection-start-line=\"4\" selection-start-column=\"8\" selection-end-line=\"4\" selection-end-column=\"46\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/P.py\" />\n        <option value=\"$PROJECT_DIR$/P1.01.py\" />\n        <option value=\"$PROJECT_DIR$/P2.01.py\" />\n        <option value=\"$PROJECT_DIR$/P3.01.py\" />\n        <option value=\"$PROJECT_DIR$/venv/P5.01.py\" />\n        <option value=\"$PROJECT_DIR$/P4.01.py\" />\n        <option value=\"$PROJECT_DIR$/P5.01.py\" />\n        <option value=\"$PROJECT_DIR$/Outils/time perf (min sec).py\" />\n        <option value=\"$PROJECT_DIR$/General/P7.01.py\" />\n        <option value=\"$PROJECT_DIR$/General/P5.01.py\" />\n        <option value=\"$PROJECT_DIR$/General/P6.01.py\" />\n        <option value=\"$PROJECT_DIR$/General/P8.01.py\" />\n        <option value=\"$PROJECT_DIR$/Secondaire/P4 avec ::-1.py\" />\n        <option value=\"$PROJECT_DIR$/Secondaire/exp.py\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\" fullScreen=\"true\">\n    <option name=\"width\" value=\"1440\" />\n    <option name=\"height\" value=\"900\" />\n  </component>\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"euler\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"euler\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"euler\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"euler\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"General\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"euler\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"euler\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"Outils\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"euler\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"euler\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"Secondaire\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/P\" />\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/General\" />\n      <recent name=\"$PROJECT_DIR$/Secondaire\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.P4 avec ::-1\">\n    <configuration name=\"P4 avec ::-1\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"euler\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Secondaire\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Secondaire/P4 avec ::-1.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"P4.02\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"euler\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Secondaire\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Secondaire/P4.02.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"P6.01\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"euler\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/General\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/General/P6.01.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"P7.01\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"euler\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/General\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/General/P7.01.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"P8.01\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"euler\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/General\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/General/P8.01.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"Python.P4.02\" />\n      <item itemvalue=\"Python.P7.01\" />\n      <item itemvalue=\"Python.P8.01\" />\n      <item itemvalue=\"Python.P6.01\" />\n      <item itemvalue=\"Python.P4 avec ::-1\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.P4 avec ::-1\" />\n        <item itemvalue=\"Python.P8.01\" />\n        <item itemvalue=\"Python.P6.01\" />\n        <item itemvalue=\"Python.P7.01\" />\n        <item itemvalue=\"Python.P4.02\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d741a0ec-b305-4d58-9861-3b25d3a0e2f8\" name=\"Default\" comment=\"\" />\n      <created>1537805682105</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1537805682105</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"+import time, nécessaire pour moi\">\n      <created>1537896349030</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1537896349030</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Premiet jet du P7, quelques problèmes pour les grands nombres\">\n      <created>1537955850371</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1537955850371</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"x\">\n      <created>1537976421469</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1537976421469</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"x\">\n      <created>1538162031826</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1538162031826</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TodoView\">\n    <todo-panel id=\"selected-file\">\n      <is-autoscroll-to-source value=\"true\" />\n    </todo-panel>\n    <todo-panel id=\"all\">\n      <are-packages-shown value=\"true\" />\n      <is-autoscroll-to-source value=\"true\" />\n    </todo-panel>\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"0\" y=\"0\" width=\"1440\" height=\"900\" extended-state=\"0\" />\n    <layout>\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.24947146\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" sideWeight=\"0.49956024\" weight=\"0.32771084\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" weight=\"0.3299363\" />\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"7\" weight=\"0.3299363\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"8\" sideWeight=\"0.50043976\" side_tool=\"true\" weight=\"0.32866243\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"9\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Python Console\" order=\"10\" weight=\"0.3299363\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"R Graphics\" order=\"3\" />\n      <window_info anchor=\"right\" id=\"R Packages\" order=\"4\" />\n    </layout>\n    <layout-to-restore>\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.31134564\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" visible=\"true\" weight=\"0.32866243\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" weight=\"0.3299363\" />\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"7\" weight=\"0.3299363\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"8\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"9\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Python Console\" order=\"10\" weight=\"0.3299363\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"R Graphics\" order=\"3\" />\n      <window_info anchor=\"right\" id=\"R Packages\" order=\"4\" />\n    </layout-to-restore>\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"+import time, nécessaire pour moi\" />\n    <MESSAGE value=\"Premiet jet du P7, quelques problèmes pour les grands nombres\" />\n    <MESSAGE value=\"x\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"x\" />\n    <option name=\"OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/P.py\" />\n    <entry file=\"file://$PROJECT_DIR$/venv/P5.01.py\" />\n    <entry file=\"file://$PROJECT_DIR$/Outils/__init__.py\" />\n    <entry file=\"file://$PROJECT_DIR$/General/P1.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"90\">\n          <caret line=\"6\" column=\"12\" selection-start-line=\"6\" selection-start-column=\"12\" selection-end-line=\"6\" selection-end-column=\"12\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Outils/time perf (min sec).py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"45\">\n          <caret line=\"3\" column=\"28\" selection-start-line=\"3\" selection-start-column=\"28\" selection-end-line=\"3\" selection-end-column=\"28\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/P3.02.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"210\">\n          <caret line=\"15\" lean-forward=\"true\" selection-start-line=\"15\" selection-end-line=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/P3.03.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"270\">\n          <caret line=\"20\" column=\"9\" selection-start-line=\"20\" selection-start-column=\"9\" selection-end-line=\"20\" selection-end-column=\"9\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P3.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"135\">\n          <caret line=\"9\" lean-forward=\"true\" selection-start-line=\"9\" selection-end-line=\"9\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P2.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"135\">\n          <caret line=\"9\" column=\"17\" lean-forward=\"true\" selection-start-line=\"9\" selection-start-column=\"17\" selection-end-line=\"9\" selection-end-column=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P7.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"255\">\n          <caret line=\"17\" lean-forward=\"true\" selection-start-line=\"17\" selection-end-line=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P8.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"240\">\n          <caret line=\"16\" selection-start-line=\"16\" selection-end-line=\"16\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P6.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"330\">\n          <caret line=\"22\" column=\"15\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"15\" selection-end-line=\"22\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P5.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"180\">\n          <caret line=\"12\" lean-forward=\"true\" selection-start-line=\"12\" selection-end-line=\"12\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/P4.02.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"240\">\n          <caret line=\"16\" column=\"8\" lean-forward=\"true\" selection-start-line=\"16\" selection-start-column=\"8\" selection-end-line=\"16\" selection-end-column=\"8\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/General/P4.01.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"240\">\n          <caret line=\"16\" column=\"8\" lean-forward=\"true\" selection-start-line=\"16\" selection-start-column=\"8\" selection-end-line=\"16\" selection-end-column=\"8\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/P4 avec ::-1.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"270\">\n          <caret line=\"18\" lean-forward=\"true\" selection-start-line=\"18\" selection-end-line=\"18\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/P1.02.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"72\">\n          <caret line=\"4\" column=\"46\" lean-forward=\"true\" selection-start-line=\"4\" selection-start-column=\"8\" selection-end-line=\"4\" selection-end-column=\"46\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/Secondaire/exp.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"285\">\n          <caret line=\"19\" lean-forward=\"true\" selection-start-line=\"19\" selection-end-line=\"19\" />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1538771881000)
++++ .idea/workspace.xml	(date 1539872604000)
+@@ -1,12 +1,17 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="d741a0ec-b305-4d58-9861-3b25d3a0e2f8" name="Default" comment="x">
+-      <change afterPath="$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Secondaire/exp.py" afterDir="false" />
++    <list default="true" id="d741a0ec-b305-4d58-9861-3b25d3a0e2f8" name="Default" comment="">
++      <change afterPath="$PROJECT_DIR$/General/P4.02.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/General/P5.02.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Outils/test1.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Outils/test2.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/General/P3.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P3.01.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/General/P5.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P5.01.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/General/P6.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P6.01.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/General/P8.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P8.01.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Outils/time perf (min sec).py" beforeDir="false" afterPath="$PROJECT_DIR$/Outils/time perf (min sec).py" afterDir="false" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -16,62 +21,30 @@
+   </component>
+   <component name="FUSProjectUsageTrigger">
+     <session id="-750274534">
+-      <usages-collector id="statistics.lifecycle.project">
+-        <counts>
+-          <entry key="project.closed" value="15" />
+-          <entry key="project.open.time.0" value="2" />
+-          <entry key="project.open.time.10" value="1" />
+-          <entry key="project.open.time.13" value="1" />
+-          <entry key="project.open.time.3" value="1" />
+-          <entry key="project.open.time.4" value="1" />
+-          <entry key="project.open.time.5" value="3" />
+-          <entry key="project.open.time.6" value="2" />
+-          <entry key="project.open.time.7" value="3" />
+-          <entry key="project.open.time.8" value="1" />
+-          <entry key="project.opened" value="15" />
+-        </counts>
+-      </usages-collector>
+       <usages-collector id="statistics.file.extensions.open">
+         <counts>
+-          <entry key="py" value="42" />
++          <entry key="py" value="2" />
+         </counts>
+       </usages-collector>
+       <usages-collector id="statistics.file.types.open">
+         <counts>
+-          <entry key="Python" value="42" />
+-        </counts>
+-      </usages-collector>
+-      <usages-collector id="statistics.file.extensions.edit">
+-        <counts>
+-          <entry key="py" value="1146" />
+-          <entry key="txt" value="115" />
++          <entry key="Python" value="2" />
+         </counts>
+       </usages-collector>
+-      <usages-collector id="statistics.file.types.edit">
++      <usages-collector id="statistics.lifecycle.project">
+         <counts>
+-          <entry key="PLAIN_TEXT" value="115" />
+-          <entry key="Python" value="1146" />
++          <entry key="project.closed" value="1" />
+         </counts>
+       </usages-collector>
+-      <usages-collector id="statistics.vcs.git.usages" />
+     </session>
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/Secondaire/exp.py">
++        <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="285">
+-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="72">
+-              <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="46" />
++            <state relative-caret-position="75">
++              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+             </state>
+           </provider>
+         </entry>
+@@ -86,6 +59,8 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
++    <option name="UPDATE_TYPE" value="MERGE" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="IdeDocumentHistory">
+@@ -98,19 +73,15 @@
+         <option value="$PROJECT_DIR$/venv/P5.01.py" />
+         <option value="$PROJECT_DIR$/P4.01.py" />
+         <option value="$PROJECT_DIR$/P5.01.py" />
+-        <option value="$PROJECT_DIR$/Outils/time perf (min sec).py" />
+-        <option value="$PROJECT_DIR$/General/P7.01.py" />
+         <option value="$PROJECT_DIR$/General/P5.01.py" />
+-        <option value="$PROJECT_DIR$/General/P6.01.py" />
+-        <option value="$PROJECT_DIR$/General/P8.01.py" />
+-        <option value="$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" />
+-        <option value="$PROJECT_DIR$/Secondaire/exp.py" />
++        <option value="$PROJECT_DIR$/Outils/time perf (min sec).py" />
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+-    <option name="width" value="1440" />
+-    <option name="height" value="900" />
++  <component name="ProjectFrameBounds" fullScreen="true">
++    <option name="y" value="23" />
++    <option name="width" value="735" />
++    <option name="height" value="877" />
+   </component>
+   <component name="ProjectLevelVcsManager">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -120,7 +91,6 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="Scope" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -133,20 +103,11 @@
+               <item name="euler" type="462c0819:PsiDirectoryNode" />
+               <item name="General" type="462c0819:PsiDirectoryNode" />
+             </path>
+-            <path>
+-              <item name="euler" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="euler" type="462c0819:PsiDirectoryNode" />
+-              <item name="Outils" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="euler" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="euler" type="462c0819:PsiDirectoryNode" />
+-              <item name="Secondaire" type="462c0819:PsiDirectoryNode" />
+-            </path>
+           </expand>
+           <select />
+         </subPane>
+       </pane>
++      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -154,14 +115,132 @@
+     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+   </component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/Secondaire" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/P" />
+       <recent name="$PROJECT_DIR$" />
+     </key>
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/General" />
+-      <recent name="$PROJECT_DIR$/Secondaire" />
+-    </key>
++  </component>
++  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
++    <UpdatedFiles>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Updated from server" />
++        <option name="myStatusName" value="Changed on server" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="CHANGED_ON_SERVER" />
++        <FILE-GROUP>
++          <option name="myUpdateName" value="Updated" />
++          <option name="myStatusName" value="Changed" />
++          <option name="mySupportsDeletion" value="false" />
++          <option name="myCanBeAbsent" value="false" />
++          <option name="myId" value="UPDATED" />
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P3.01.py</PATH>
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P5.01.py</PATH>
++        </FILE-GROUP>
++        <FILE-GROUP>
++          <option name="myUpdateName" value="Created" />
++          <option name="myStatusName" value="Created" />
++          <option name="mySupportsDeletion" value="false" />
++          <option name="myCanBeAbsent" value="false" />
++          <option name="myId" value="CREATED" />
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P4.02.py</PATH>
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P5.02.py</PATH>
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P6.01.py</PATH>
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/Outils/test1.py</PATH>
++          <PATH vcs="Git" revision="">$PROJECT_DIR$/Outils/test2.py</PATH>
++        </FILE-GROUP>
++        <FILE-GROUP>
++          <option name="myUpdateName" value="Deleted" />
++          <option name="myStatusName" value="Deleted" />
++          <option name="mySupportsDeletion" value="false" />
++          <option name="myCanBeAbsent" value="true" />
++          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
++        </FILE-GROUP>
++        <FILE-GROUP>
++          <option name="myUpdateName" value="Restored" />
++          <option name="myStatusName" value="Will be restored" />
++          <option name="mySupportsDeletion" value="false" />
++          <option name="myCanBeAbsent" value="false" />
++          <option name="myId" value="RESTORED" />
++        </FILE-GROUP>
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Modified" />
++        <option name="myStatusName" value="Modified" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="MODIFIED" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Skipped" />
++        <option name="myStatusName" value="Skipped" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="SKIPPED" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Merged with conflicts" />
++        <option name="myStatusName" value="Will be merged with conflicts" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="MERGED_WITH_CONFLICTS" />
++        <PATH vcs="Git" revision="">$PROJECT_DIR$/Outils/time perf (min sec).py</PATH>
++        <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
++        <PATH vcs="Git" revision="">$PROJECT_DIR$/General/P8.01.py</PATH>
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Merged with tree conflicts" />
++        <option name="myStatusName" value="Merged with tree conflicts" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Merged with property conflicts" />
++        <option name="myStatusName" value="Will be merged with property conflicts" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Merged" />
++        <option name="myStatusName" value="Will be merged" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="MERGED" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Not in repository" />
++        <option name="myStatusName" value="Not in repository" />
++        <option name="mySupportsDeletion" value="true" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="UNKNOWN" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Locally added" />
++        <option name="myStatusName" value="Locally added" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="LOCALLY_ADDED" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Locally removed" />
++        <option name="myStatusName" value="Locally removed" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="LOCALLY_REMOVED" />
++      </FILE-GROUP>
++      <FILE-GROUP>
++        <option name="myUpdateName" value="Switched" />
++        <option name="myStatusName" value="Switched" />
++        <option name="mySupportsDeletion" value="false" />
++        <option name="myCanBeAbsent" value="false" />
++        <option name="myId" value="SWITCHED" />
++      </FILE-GROUP>
++    </UpdatedFiles>
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -175,71 +254,8 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Python.P4 avec ::-1">
+-    <configuration name="P4 avec ::-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="euler" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Secondaire" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="P4.02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="euler" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Secondaire" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Secondaire/P4.02.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="P6.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="euler" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/General" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P6.01.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="P7.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
++  <component name="RunManager">
++    <configuration name="P1.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="euler" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -251,7 +267,7 @@
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P7.01.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P1.01.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -260,41 +276,9 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="P8.01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="euler" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/General" />
+-      <option name="IS_MODULE_SDK" value="true" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General/P8.01.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <list>
+-      <item itemvalue="Python.P4.02" />
+-      <item itemvalue="Python.P7.01" />
+-      <item itemvalue="Python.P8.01" />
+-      <item itemvalue="Python.P6.01" />
+-      <item itemvalue="Python.P4 avec ::-1" />
+-    </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Python.P4 avec ::-1" />
+-        <item itemvalue="Python.P8.01" />
+-        <item itemvalue="Python.P6.01" />
+-        <item itemvalue="Python.P7.01" />
+-        <item itemvalue="Python.P4.02" />
++        <item itemvalue="Python.P1.01" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -309,45 +293,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1537805682105</updated>
+     </task>
+-    <task id="LOCAL-00001" summary="+import time, nécessaire pour moi">
+-      <created>1537896349030</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1537896349030</updated>
+-    </task>
+-    <task id="LOCAL-00002" summary="Premiet jet du P7, quelques problèmes pour les grands nombres">
+-      <created>1537955850371</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1537955850371</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="x">
+-      <created>1537976421469</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1537976421469</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="x">
+-      <created>1538162031826</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1538162031826</updated>
+-    </task>
+-    <option name="localTasksCounter" value="5" />
+     <servers />
+-  </component>
+-  <component name="TodoView">
+-    <todo-panel id="selected-file">
+-      <is-autoscroll-to-source value="true" />
+-    </todo-panel>
+-    <todo-panel id="all">
+-      <are-packages-shown value="true" />
+-      <is-autoscroll-to-source value="true" />
+-    </todo-panel>
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+@@ -357,15 +303,15 @@
+       <window_info id="Favorites" order="2" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" />
+-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49956024" weight="0.32771084" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
+-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299363" />
+-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50043976" side_tool="true" weight="0.32866243" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299363" />
++      <window_info anchor="bottom" id="Python Console" order="10" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+@@ -397,42 +343,25 @@
+   <component name="VcsContentAnnotationSettings">
+     <option name="myLimit" value="2678400000" />
+   </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="+import time, nécessaire pour moi" />
+-    <MESSAGE value="Premiet jet du P7, quelques problèmes pour les grands nombres" />
+-    <MESSAGE value="x" />
+-    <option name="LAST_COMMIT_MESSAGE" value="x" />
+-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+-  </component>
+   <component name="editorHistoryManager">
+     <entry file="file://$PROJECT_DIR$/P.py" />
+     <entry file="file://$PROJECT_DIR$/venv/P5.01.py" />
+-    <entry file="file://$PROJECT_DIR$/Outils/__init__.py" />
+-    <entry file="file://$PROJECT_DIR$/General/P1.01.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="90">
+-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/Outils/time perf (min sec).py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="45">
+-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+-        </state>
+-      </provider>
++    <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
++      <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Secondaire/P3.02.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="210">
+-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+-        </state>
+-      </provider>
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/Secondaire/P4.02.py">
++      <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Secondaire/P3.03.py">
++      <provider selected="true" editor-type-id="text-editor" />
++    </entry>
++    <entry file="file://$PROJECT_DIR$/General/P2.01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="270">
+-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
++        <state relative-caret-position="195">
++          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+         </state>
+       </provider>
+     </entry>
+@@ -443,73 +372,45 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/General/P2.01.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="135">
+-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/General/P7.01.py">
++    <entry file="file://$PROJECT_DIR$/General/P4.01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="255">
+-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
++        <state relative-caret-position="240">
++          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
++    <entry file="file://$PROJECT_DIR$/Outils/__init__.py" />
++    <entry file="file://$PROJECT_DIR$/General/P1.01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="240">
+-          <caret line="16" selection-start-line="16" selection-end-line="16" />
++        <state relative-caret-position="90">
++          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/General/P6.01.py">
++    <entry file="file://$PROJECT_DIR$/Outils/time perf (min sec).py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="330">
+-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
++        <state relative-caret-position="30">
++          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/General/P5.01.py">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="180">
+-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/Secondaire/P4.02.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="240">
+-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/General/P4.01.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="240">
+-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
++          <caret line="12" selection-start-line="12" selection-end-line="12" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Secondaire/P4 avec ::-1.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="270">
+-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+-        </state>
+-      </provider>
++    <entry file="file://$PROJECT_DIR$/General/P6.01.py">
++      <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="72">
+-          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="46" />
+-        </state>
+-      </provider>
++    <entry file="file://$PROJECT_DIR$/General/P5.02.py">
++      <provider selected="true" editor-type-id="text-editor" />
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Secondaire/exp.py">
++    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="285">
+-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
++        <state relative-caret-position="75">
++          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+         </state>
+       </provider>
+     </entry>
+Index: Outils/time perf (min sec).py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import time   #\"import time\" necessaire\nminu = round((time.perf_counter()/60),2)\nseco = (minu - int (minu) ) * 60\nprint('(en', int(minu),'min et', int(seco), 'sec)')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Outils/time perf (min sec).py	(date 1538771881000)
++++ Outils/time perf (min sec).py	(date 1539857797000)
+@@ -1,4 +1,3 @@
+-import time   #"import time" necessaire
+ minu = round((time.perf_counter()/60),2)
+ seco = (minu - int (minu) ) * 60
+-print('(en', int(minu),'min et', int(seco), 'sec)')
+\ No newline at end of file
++print('(en', int(minu),'\rmin et', int(seco), '\rsec)')
+\ No newline at end of file
+Index: General/P5.01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>tst = 0\na = 1\nwhile True:\n    for i in range(11,19):\n        if a % i == 0:\n            tst += 1\n    if tst == 8:\n        break\n    tst = 0\n    a += 1\nprint(a)\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P5.01.py	(date 1538771881000)
++++ General/P5.01.py	(date 1539857610000)
+@@ -1,12 +1,13 @@
+ tst = 0
+-a = 1
++a = 2520
+ while True:
+-    for i in range(11,19):
++    for i in range(11, 21):
+         if a % i == 0:
+             tst += 1
+-    if tst == 8:
++        else:
++            break
++    if tst == 10:
+         break
+     tst = 0
+     a += 1
+ print(a)
+-
+Index: General/P8.01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#N = [] -> suite des chiffres de N -> besoin de: cf ci dessous:\n        #n = int -> list chiffre n ???\n# donc test avec une suite basic et une multiplication de 2 chiffres a la suite au lieu de 5\nn = [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1,3,4,3,2,5,6,5,6,5,4,4,4,4,4,4,2]\na = 0\ni = 0\ntest = 0\nwhile i < int(len(n)-1):\n    test = int(int(int(n[i]) * int(n[i + 1])) * int(int(n[i + 2]) * int(n[i + +3])) * int((n[i + 4])))\n    if test > a:\n        a = int((int(n[i])*int(n[i+1]))*int(int(n[i+2])*int(n[i++3]))*int(n[i+4]))\n    i += 1\n\nprint(\"\\n\", a)\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P8.01.py	(date 1538771881000)
++++ General/P8.01.py	(date 1539857781000)
+@@ -1,16 +1,6 @@
+-#N = [] -> suite des chiffres de N -> besoin de: cf ci dessous:
+-        #n = int -> list chiffre n ???
+-# donc test avec une suite basic et une multiplication de 2 chiffres a la suite au lieu de 5
+-n = [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1,3,4,3,2,5,6,5,6,5,4,4,4,4,4,4,2]
+-a = 0
+-i = 0
+-test = 0
+-while i < int(len(n)-1):
+-    test = int(int(int(n[i]) * int(n[i + 1])) * int(int(n[i + 2]) * int(n[i + +3])) * int((n[i + 4])))
+-    if test > a:
+-        a = int((int(n[i])*int(n[i+1]))*int(int(n[i+2])*int(n[i++3]))*int(n[i+4]))
+-    i += 1
+-
+-print("\n", a)
+-
+-
++a = list(map(int, str(7316717653133062491922511967442657474235534919493496983520312774506326239578318016984801869478851843858615607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766142828064444866452387493035890729629049156044077239071381051585930796086670172427121883998797908792274921901699720888093776657273330010533678812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591245665294765456828489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987879927244284909188845801561660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450)))
++e = 0
++for i in range (995):
++    if (a[i]*a[i+1]*a[i+2]*a[i+3]*a[i+5])>e:
++        e = (a[i]*a[i+1]*a[i+2]*a[i+3]*a[i+5])
++print(e)
+\ No newline at end of file
+Index: General/P6.01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>a = 1\nsc = 0\ncs = 0\n\nwhile a <= 100 :\n    cs += a\n    sc += a**2\n    a += 1\ncs = cs ** 2\nprint ('somme des carrés', sc)\nprint ('carré de la somme', cs)\n\ndif = cs-sc\n\nprint ('\\nDifférence \"la somme des carrés\" - \"le carré de leur somme\" est', dif )\n\n\n\nwhile i < int(len(n)-1):\n    if int(n[i])*int(n[i+1]) > a:\n        a = int(n[i])*int(n[i+1])\n    i += 1\nprint (\"\\n\", a)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- General/P6.01.py	(date 1538771881000)
++++ General/P6.01.py	(date 1539857701000)
+@@ -1,23 +1,9 @@
+ a = 1
+ sc = 0
+ cs = 0
+-
+ while a <= 100 :
+     cs += a
+     sc += a**2
+     a += 1
+ cs = cs ** 2
+-print ('somme des carrés', sc)
+-print ('carré de la somme', cs)
+-
+-dif = cs-sc
+-
+-print ('\nDifférence "la somme des carrés" - "le carré de leur somme" est', dif )
+-
+-
+-
+-while i < int(len(n)-1):
+-    if int(n[i])*int(n[i+1]) > a:
+-        a = int(n[i])*int(n[i+1])
+-    i += 1
+-print ("\n", a)
+\ No newline at end of file
++print (cs-sc)
+\ No newline at end of file

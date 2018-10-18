@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d741a0ec-b305-4d58-9861-3b25d3a0e2f8" name="Default" comment="x">
-      <change afterPath="$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Secondaire/exp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/General/P6.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P6.01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/General/P8.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/General/P8.01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,24 +29,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="42" />
+          <entry key="py" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="42" />
+          <entry key="Python" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1146" />
+          <entry key="py" value="1194" />
           <entry key="txt" value="115" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="115" />
-          <entry key="Python" value="1146" />
+          <entry key="Python" value="1194" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,19 +55,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Secondaire/exp.py">
+        <entry file="file://$PROJECT_DIR$/General/P8.01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="135">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
+        <entry file="file://$PROJECT_DIR$/General/P6.01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,9 +98,9 @@
         <option value="$PROJECT_DIR$/General/P7.01.py" />
         <option value="$PROJECT_DIR$/General/P5.01.py" />
         <option value="$PROJECT_DIR$/General/P6.01.py" />
-        <option value="$PROJECT_DIR$/General/P8.01.py" />
         <option value="$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" />
         <option value="$PROJECT_DIR$/Secondaire/exp.py" />
+        <option value="$PROJECT_DIR$/General/P8.01.py" />
       </list>
     </option>
   </component>
@@ -132,16 +128,6 @@
               <item name="euler" type="b2602c69:ProjectViewProjectNode" />
               <item name="euler" type="462c0819:PsiDirectoryNode" />
               <item name="General" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="euler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="euler" type="462c0819:PsiDirectoryNode" />
-              <item name="Outils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="euler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="euler" type="462c0819:PsiDirectoryNode" />
-              <item name="Secondaire" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538162031826</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="x">
+      <created>1539872694613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539872694614</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -351,6 +344,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -364,7 +358,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50043976" side_tool="true" weight="0.32866243" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -457,20 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/General/P6.01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/General/P5.01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -492,13 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Secondaire/P4 avec ::-1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Secondaire/P4 avec ::-1.py" />
     <entry file="file://$PROJECT_DIR$/Secondaire/P1.02.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -506,10 +480,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Secondaire/exp.py">
+    <entry file="file://$PROJECT_DIR$/Secondaire/exp.py" />
+    <entry file="file://$PROJECT_DIR$/General/P6.01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/General/P8.01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
